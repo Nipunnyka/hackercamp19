@@ -71,7 +71,7 @@ class _ProductState extends State<Product> {
   ];
 
   @override
-  Widget build(BuildContext context) {
+ /* Widget build(BuildContext context) {
     return GridView.builder(
         itemCount: productList.length,
         gridDelegate:
@@ -84,5 +84,22 @@ class _ProductState extends State<Product> {
             productPrice: productList[index]['price'],
           );
         });
+  }*/
+   Widget build (BuildContext context){
+    return ListView.builder(
+      padding: const EdgeInsets.all(8),
+      itemCount: productList.length,
+      itemBuilder: (BuildContext context, int index){
+        return SingleProduct(
+           productName: productList[index]['name'],
+            productPicture: productList[index]['picture'],
+            productOldPrice: productList[index]['old price'],
+            productPrice: productList[index]['price'],
+          );
+      
+      }
+
+    );
   }
+
 }

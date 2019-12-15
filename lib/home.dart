@@ -13,27 +13,27 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   var categories = [
     {
-      'title': 'Women',
+      'title': 'Wholesome',
       'img': 'img/dress.jpg',
     },
     {
-      'title': 'Men',
+      'title': 'Dank',
       'img': 'img/men.jpg',
     },
     {
-      'title': 'Kids',
+      'title': 'Science',
       'img': 'img/children.jpg',
     },
     {
-      'title': 'House',
+      'title': 'Doggo',
       'img': 'img/house.jpg',
     },
     {
-      'title': 'Cars',
+      'title': 'Political',
       'img': 'img/cars.jpg',
     },
     {
-      'title': 'Electronics',
+      'title': 'Puntastic',
       'img': 'img/electronics.jpg',
     },
   ];
@@ -42,9 +42,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Categories"),
+        //maybe add custom font
+        title: Text("Choose your M00D"),
       ),
-      drawer: buildDrawer(),
+     // drawer: buildDrawer(), drawer is the side bar that shows up with contact info we dont need tha shiz
       body: buildBody(),
     );
   }
@@ -122,7 +123,7 @@ class _HomeState extends State<Home> {
         false;
   }
 
-  Widget buildDrawer() {
+/*  Widget buildDrawer() {
     return Drawer(
       child: Column(
         children: <Widget>[
@@ -203,7 +204,7 @@ class _HomeState extends State<Home> {
         ],
       ),
     );
-  }
+  } 
 
   Widget buildSeparators(String name) {
     return Row(
@@ -235,5 +236,5 @@ class _HomeState extends State<Home> {
           Navigator.pushNamed(context, path);
       },
     );
-  }
+  }*/
 }

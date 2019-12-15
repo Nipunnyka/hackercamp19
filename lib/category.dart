@@ -21,14 +21,14 @@ class _CategoryState extends State<Category> {
       ),
       body: Column(
         children: <Widget>[
-          Expanded(
+          /*Expanded(
             child: buildSwiper(),
             flex: 2,
           ),
           Expanded(
             child: buildSubcategories(),
             flex: 1,
-          ),
+          ),*/
           Expanded(
             child: Container(
               child: Product(),
@@ -40,7 +40,7 @@ class _CategoryState extends State<Category> {
     );
   }
 
-  Widget buildSubcategories() {
+/*  Widget buildSubcategories() {
     return Container(
 //      height: MediaQuery.of(context).size.height / 8,
       child: ListView(
@@ -146,5 +146,5 @@ class _CategoryState extends State<Category> {
         // dotColor: Colors.blue,
       ),
     );
-  }
+  }*/
 }
